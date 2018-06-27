@@ -4,6 +4,7 @@ import "mocha";
 import { myFn as naive }  from "./naive";
 import { myFn as nested } from "./nested";
 import { myFn as except } from "./except";
+import { myFn as state } from "./state";
 import { myFn as matej } from "./matej";
 
 const tests = {
@@ -31,5 +32,6 @@ function executeTests(version:string, fn) {
 
 executeTests("naive", naive);
 executeTests("nested", nested);
-executeTests("nested", nested);
+executeTests("except", except);
+executeTests("state", state);
 executeTests("matej", matej);
